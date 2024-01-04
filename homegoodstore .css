@@ -1,0 +1,452 @@
+            .demo {
+                align-items: center;
+                background: #fff;
+                box-shadow: 0 2px 18px 0 rgba(129, 162, 182, .2);
+                box-sizing: border-box;
+                flex-direction: row;
+                height: 72px;
+                justify-content: space-between;
+                padding: 0 48px;
+            }
+
+            .demo2 {
+                margin-right: calc(47px * .3);
+            }
+
+            .demo1 {
+                display: flex;
+                flex: 1;
+            }
+
+            .demo3 {
+                margin-left: auto;
+                margin-right: 10%;
+            }
+
+            .demo4 {
+                border-bottom: none;
+                border-left: none;
+                border-top: none;
+                border-color: #20303c;
+                height: 25px;
+                margin: 0 25px;
+                opacity: .5;
+            }
+
+            hr {
+                display: block;
+                unicode-bidi: isolate;
+                margin-block-start: 0.5em;
+                margin-block-end: 0.5em;
+                margin-inline-start: auto;
+                margin-inline-end: auto;
+                overflow: hidden;
+                border-style: inset;
+                border-width: 1px;
+            }
+
+            .demo5,
+            .demo3 {
+                align-items: center;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .btn {
+                border-radius: 50px;
+            }
+
+            .demo5,
+            .demo6 {
+                gap: 10px;
+            }
+
+            .test:hover {
+                color: blue;
+            }
+
+            /* subheader */
+
+            .test1 {
+                background-color: rgb(228, 195, 152);
+                height: 50px;
+                margin-top: 70px;
+            }
+
+            .sub-test {
+                justify-content: space-around;
+            }
+
+            /* link */
+
+            a:link {
+                text-decoration: none;
+            }
+
+            /*main*/
+
+            .test-main {
+                background-image: url("./background.jpg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                height: 700px;
+                cursor: pointer;
+            }
+
+            .test-main1 {
+                font-size: 250px;
+                color: rgb(216, 148, 59);
+            }
+
+            @media only screen and (max-width: 767.98px) {
+                .test-main1 {
+                    font-size: 50px;
+                }
+            }
+
+            .test-main2:hover,
+            .test-main1:hover {
+                color: rgb(228, 195, 152);
+                cursor: pointer;
+            }
+
+            .test-main2 {
+                font-size: 30px;
+            }
+
+            .container {
+                position: relative;
+                width: 50%;
+            }
+
+            .image {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                /* background-image: url(./Organic\ Cotton\ Mesh\ Bags\ frut.jpg);
+        background-repeat: no-repeat; */
+            }
+
+            .container:hover .overlay {
+                opacity: 1;
+            }
+
+            .text {
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+
+            .middle1 {
+                background-color: #326f9f;
+                border-radius: 50px;
+            }
+
+            /* middle */
+
+            .demo10 {
+                background-color: rgb(198, 225, 152);
+            }
+
+            /* Global Styling */
+
+            nav {
+                background-color: #34495e;
+                height: 80px;
+                position: fixed;
+                width: 100vw;
+                top: 0;
+                z-index: 999;
+            }
+
+            #logo {
+                height: 80px;
+                margin-left: 20px;
+            }
+
+            .wrapper {
+                padding: 50px 50px;
+                max-width: 1200px;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .right {
+                float: right !important;
+            }
+
+            /* Image zoom on hover + Overlay colour */
+
+            .parent {
+                width: 45%;
+                margin: 20px;
+                height: 400px;
+                border: 1px solid rgb(197, 197, 219);
+                overflow: hidden;
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+                border-radius: 100px;
+                width: 400px;
+                filter: drop-shadow(5px 5px 5px #000000);
+            }
+
+            .child {
+                height: 100%;
+                width: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                -webkit-transition: all .5s;
+                -moz-transition: all .5s;
+                -o-transition: all .5s;
+                transition: all .5s;
+            }
+
+            /* Several different images */
+
+            .bg-one {
+                background-image: url(./Bamboo\ Toothbrush.jpg);
+            }
+
+            .bg-two {
+                background-image: url(./Organic\ Cotton\ Mesh\ Bags\ frut.jpg);
+            }
+
+            .bg-three {
+                background-image: url(./woodbrush.jpg);
+            }
+
+            .back1 {
+                display: none;
+                font-size: 35px;
+                color: #ffffff !important;
+                font-family: sans-serif;
+                text-align: center;
+                margin: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                height: 50px;
+                cursor: pointer;
+                /*text-decoration: none;*/
+            }
+
+            .parent:hover .child,
+            .parent:focus .child {
+                -ms-transform: scale(1.2);
+                -moz-transform: scale(1.2);
+                -webkit-transform: scale(1.2);
+                -o-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+
+            .parent:hover .child:before,
+            .parent:focus .child:before {
+                display: block;
+            }
+
+            .parent:hover a,
+            .parent:focus a {
+                display: block;
+            }
+
+            .child:before {
+                content: "";
+                display: none;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba(52, 73, 94, 0.75);
+            }
+
+            /* Media Queries */
+
+            @media screen and (max-width: 960px) {
+                .parent {
+                    width: 100%;
+                    margin: 20px 0px
+                }
+
+                .wrapper {
+                    padding: 20px 20px;
+                    flex-direction: column !important;
+                    width: 400px;
+                }
+            }
+
+            .hello {
+                display: none
+            }
+
+            .middle11 {
+                background-color: #c5c49e;
+            }
+
+            .test9 {
+                background-image: url(./podhe.jpg);
+                background-repeat: no-repeat;
+                height: 500px;
+                width: 700px;
+                margin: auto;
+                border-radius: 50px 50px 50px 50px;
+            }
+
+            .last {
+                background-color: #cdca6b;
+            }
+
+            .img111 {
+                justify-content: center;
+                gap: 20px;
+                border-bottom: 1px solid black;
+                padding-bottom: 20px;
+
+            }
+
+            .demo12 {
+                position: relative;
+
+            }
+
+            .img2 {
+                opacity: 1;
+                display: block;
+
+                transition: .5s ease;
+                backface-visibility: hidden;
+                width: 300px;
+                height: 300px;
+
+
+            }
+
+            .middle10 {
+
+
+                transition: .5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+
+
+            }
+
+            .demo12:hover .img2 {
+                opacity: 0.3;
+            }
+
+            .demo12:hover .middle10 {
+                opacity: 1;
+            }
+
+
+
+            @media screen and (max-width: 960px) {
+
+                .list2 {
+
+                    flex-direction: column !important;
+                }
+
+                .list3 {
+
+                    flex-direction: column !important;
+                }
+
+                .list5 {
+                    flex-direction: column !important;
+                }
+
+                .list6 {
+                    flex-direction: column !important;
+                }
+
+                .svg2 {
+
+                    flex-direction: column !important;
+                }
+
+                .img111 {
+                    padding: 20px 20px;
+                    flex-direction: column !important;
+                }
+
+                .middle {
+
+                    flex-direction: column !important;
+                }
+
+
+            }
+
+            .cssanimation,
+            .cssanimation span {
+                animation-duration: 5s;
+                animation-fill-mode: both;
+            }
+
+            .cssanimation span {
+                display: inline-block
+            }
+
+            .fadeInBottom {
+                animation-name: fadeInBottom
+            }
+
+            @keyframes fadeInBottom {
+                from {
+                    opacity: 0;
+                    transform: translateY(100%);
+                }
+
+                to {
+                    opacity: 1
+                }
+            }
+
+            .imga_nim {
+                position: relative;
+                animation-name: test1;
+                animation-duration: 2s;
+                animation-timing-function: ease;
+            }
+
+            @keyframes test1 {
+                0% {
+                    left: 200px;
+                    opacity: 0;
+                }
+
+                100% {
+                    left: 0px;
+                    opacity: 1;
+                }
+            }
